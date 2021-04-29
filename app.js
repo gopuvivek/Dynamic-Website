@@ -5,7 +5,7 @@ const app = express();
 
 app.set('view engine','ejs');
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT||5000,()=>{
     console.log('Listening on Port 5000');
 });
 //const dbURI = 'mongodb://127.0.0.1:27017/autostores';
