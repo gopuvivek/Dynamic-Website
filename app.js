@@ -8,7 +8,8 @@ app.set('view engine','ejs');
 app.listen(5000,()=>{
     console.log('Listening on Port 5000');
 });
-const dbURI = 'mongodb://127.0.0.1:27017/autostores';
+//const dbURI = 'mongodb://127.0.0.1:27017/autostores';
+const dbURI = 'mongodb://topuser:munich@cluster0-shard-00-00.ebjho.mongodb.net:27017,cluster0-shard-00-01.ebjho.mongodb.net:27017,cluster0-shard-00-02.ebjho.mongodb.net:27017/autostores?ssl=true&replicaSet=atlas-gf9lrf-shard-0&authSource=admin&retryWrites=true&w=majority';
 mongoose.connect(dbURI,{useNewUrlParser: true, useUnifiedTopology: true})
 .then((result)=>console.log("Connected to DB!"))
 .catch((err)=>console.log(err));
