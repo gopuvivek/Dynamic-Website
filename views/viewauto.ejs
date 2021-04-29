@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Auto World | <%= brand %> <%= title %></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/font-awesome.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <% if(result.length>0){ %> 
+    <h3 style="color: white;" class="text-center mt-5">Our <%= brand %> collection is as follows</h3>
+    <div class="tbfoot">
+      <table class="table table-auto table-hover" style="overflow-y: scroll;">
+        <thead style="background-color: #0063B2FF; color:white;">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Model</th>
+            <th scope="col">Price(₹)</th>
+            <th scope="col">Quantity</th>
+          </tr>
+        </thead>
+       
+        <% result.forEach(st=> {%> 
+            <tr>
+                <td><%= st._id %></td>
+                <td><%= st.brand %></td>
+                <td><%= st.model %></td>
+                <td><%= st.price %></td>
+                <td><%= st.quantity %></td>
+            </tr>
+        <% });%> 
+        <% }%>
+       
+      </table>
+    </div>
+    <% if(result.length<1){ %>
+        <h3 style="color: white;" class="text-center mt-5">We have no stock of <%= brand %> currently !</h3>
+        
+    <% } %> 
+    
+    <%- include('./partials/footer.ejs') %>
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

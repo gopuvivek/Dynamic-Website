@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Auto World | <%= title %></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/font-awesome.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="form-div">
+        <form action=<%= href %> method="POST">
+            <div class="form-group row">
+              <label for="brandid" class="col-sm-3 col-form-label">Brand </label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="brandid" name="brand" value="<%=auto.brand%>" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="modelid" class="col-sm-3 col-form-label">Model </label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="modelid" name="model" value="<%=auto.model%>" required>
+              </div>
+            </div>
+            <div class="form-group row">
+                <label for="priceid" class="col-sm-3 col-form-label">Price(₹) </label>
+                <div class="col-sm-9">
+                  <input type="number" class="form-control" id="priceid" name="price" value="<%=auto.price%>" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="quantid" class="col-sm-3 col-form-label">Quantity </label>
+                <div class="col-sm-9">
+                  <input type="number" class="form-control" id="quantid" name="quantity" value="<%=auto.quantity%>" required>
+                </div>
+            </div>
+            <div class="form-group row">
+              <div class="ml-4 col-sm-10">
+                <button type="submit" class="btn btn-auto"><%= action%> </button>
+              </div>
+            </div>
+          </form>
+    </div>
+    
+</body>
+<%- include('./partials/footer.ejs') %>
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</html>

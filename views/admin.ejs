@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Auto World | <%= title %></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/font-awesome.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    
+    <div class="main-content">
+        <h3 style="color: white;" class="text-center mt-5 mb-5">Hello Admin! What do you wish to do today?</h3>
+        <div class="row">
+            <div class="col-sm-4 ml-auto mr-auto text-center">
+                <div class="card card-admin">
+                  <div class="card-body card-body-admin" style="border-bottom: solid #0063B2FF;">
+                    <h5 class="card-title">Add New Stock </h5>
+                    <p class="card-text">Use this feature to add new stock to the inventory</p>
+                    <a href="/add-auto" class="btn btn-auto">Add Stock ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 ml-auto mr-auto text-center">
+                <div class="card card-admin">
+                  <div class="card-body card-body-admin" style="border-bottom: solid #0063B2FF;">
+                    <h5 class="card-title">View Current Stock</h5>
+                    <p class="card-text">Use this feature to View/Update current stock in the inventory</p>
+                    <a href="/get-auto" class="btn btn-auto">View/Update ></a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <%- include('./partials/footer.ejs') %>
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

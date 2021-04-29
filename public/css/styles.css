@@ -1,0 +1,129 @@
+*{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#navbar
+{
+text-align: center;
+}
+.navbar-dark {
+background-color: #0063B2FF;
+color: white;
+border-bottom: solid #9CC3D5FF 3px;
+}
+.jumbotron {
+    position: absolute;
+    width: 100%;
+    background: grey;
+    color: floralwhite; 
+}
+body{
+    background-color: #0063B2FF;
+    
+}
+.main-content{
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 100;
+}
+.form-div{
+    width: 500px;
+    min-height: fit-content;
+    margin-top: 70;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100;
+    padding: 20px 20px 20px 20px;
+    background-color: #9CC3D5FF;
+    border:1px solid;
+} 
+.footer {
+    width: 100%;
+    position: relative;
+    background-color: #9CC3D5FF;
+    padding: 20px 0px; 
+    bottom: 0;
+}
+.tbfoot{
+    min-height: fit-content;
+    min-width: fit-content;
+    margin-top: 70;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 150;
+    padding: 20px 20px 20px 20px;
+}
+.table-auto{
+    margin: 50;
+    background-color: #9CC3D5FF;
+    color: black;
+    border:solid black;
+    border-style: solid;
+}
+.btn-auto{
+    border: solid#0063B2FF !important;
+}
+.btn-auto:hover{
+    background-color: #0063B2FF;
+    color: #9CC3D5FF;
+}
+form{
+    color: #0063B2FF;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.table{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: large;
+}
+
+table{
+    vertical-align: center;
+}
+.nav-item {
+font-size: 20px;
+margin : 5px 0px 5px 0px;
+text-align: center;
+color: white;
+}
+.nav-link{
+    color: white;
+}
+
+.navbar-nav{
+    float: right;
+}
+.nav-link:hover {
+color: white;
+}
+.card{
+    border: solid #9CC3D5FF
+}
+.card-body{
+    width: 100%;
+    background-color:#9CC3D5FF;
+    border: solid #0063B2FF;
+    border-bottom: none;
+}
+.card-admin{
+    height: 100%;
+    margin-top: 90px;
+    vertical-align: center;
+}
+.card-body-admin
+{
+    padding-top: 85px;
+}
+.btn-auto-inv{
+    border: solid#9CC3D5FF !important;
+}
+.btn-auto-inv:hover{
+    background-color: #9CC3D5FF;
+    color: #0063B2FF
+}

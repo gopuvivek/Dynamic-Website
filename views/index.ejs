@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Auto World | <%= title %></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/font-awesome.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    
+    <div class="main-content">
+        <h3 style="color: white;" class="text-center mt-5 mb-5">We have a great collection of exotic cars, the following are the popular makes</h3>
+        <div class="row">
+            <div class="card ml-auto mr-auto col-sm-2">
+                <img src="imgs/bmw.png"class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="ml-auto mr-auto card-title">BMW</h5>
+                    <a class="ml-auto mr-auto btn btn-auto" href="get-auto/BMW">Check Stock</a>
+                </div>
+            </div>
+            <div class="card mr-auto ml-auto col-sm-2">
+                <img src="imgs/vw.png"class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="ml-auto mr-auto card-title">Volkswagen</h5>
+                    <a class="ml-auto mr-auto btn btn-auto" href="get-auto/Volkswagen">Check Stock</a>
+                </div>
+            </div>
+            <div class="card mr-auto ml-auto col-sm-2">
+                <img src="imgs/audi.svg" style="padding-top:75px; padding-bottom: 75px;">
+                <div class="card-body text-center">
+                    <h5 class="ml-auto mr-auto card-title">Audi</h5>
+                    <a class="ml-auto mr-auto btn btn-auto" href="get-auto/Audi">Check Stock</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="card mr-auto ml-auto col-sm-2">
+                <img src="imgs/mercedes.svg" style="padding: 1.5em;">
+                <div class="card-body text-center">
+                    <h5 class="ml-auto mr-auto card-title">Mercedes Benz</h5>
+                    <a class="ml-auto mr-auto btn btn-auto" href="get-auto/Mercedes">Check Stock</a>
+                </div>
+            </div>
+            <div class="card mr-auto ml-auto col-sm-2">
+                <img src="imgs/porsche.svg" style="padding-top: 60px; padding-bottom: 60px;">
+                <div class="card-body text-center">
+                    <h5 class="ml-auto mr-auto card-title">Porshce</h5>
+                    <a class="ml-auto mr-auto btn btn-auto" href="get-auto/Porsche">Check Stock</a>
+                </div>
+            </div>
+            <div class="card mr-auto ml-auto col-sm-2">
+                <img src="imgs/jaguar.svg" style="padding-top: 60px; padding-bottom: 60px;">
+                <div class="card-body text-center">
+                    <h5 class="ml-auto mr-auto card-title">Jaguar</h5>
+                    <a class="ml-auto mr-auto btn btn-auto" href="get-auto/Jaguar">Check Stock</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

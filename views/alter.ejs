@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Auto World | <%= title %></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/font-awesome.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    
+    <div class="tbfoot">
+      <table class="table table-auto table-hover" style="overflow-y: scroll;">
+        <thead style="background-color: #0063B2FF; color: white;">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Model</th>
+            <th scope="col">Price(₹)</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <% result.forEach(st=> {%> 
+            <tr>
+                <td><%= st._id %></td>
+                <td><%= st.brand %></td>
+                <td><%= st.model %></td>
+                <td><%= st.price %></td>
+                <td><%= st.quantity %></td>
+                <td>
+                  <a href="delete/<%= st._id %>" class="btn btn-auto"><i class="fas fa-trash"></i></a>
+                  <a href="add-auto/<%= st._id %>" class="btn btn-auto"><i class="far fa-edit"></i></a>
+                </td>
+            </tr>
+        <% })%> 
+      </table>
+    </div>
+    
+    <%- include('./partials/footer.ejs') %>
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
